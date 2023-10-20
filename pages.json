@@ -1,6 +1,6 @@
 {
   "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-    , {
+    {
       "path": "pages/home/home",
       "style": {
         "navigationBarTitleText": "",
@@ -30,6 +30,23 @@
 
     }
   ],
+  "subPackages": [{
+      "root": "subpkg",
+      "pages": [
+        {
+          "path": "goods_detail/goods_detail"
+        }
+          ,{
+                    "path" : "goods_list/goods_list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+    }],
   "globalStyle": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "商城",
@@ -62,7 +79,7 @@
         "text": "我的",
         "iconPath": "static/tab_icons/my.png",
         "selectedIconPath": "static/tab_icons/my-active.png"
-      },
+      }
     ]
   }
 }
